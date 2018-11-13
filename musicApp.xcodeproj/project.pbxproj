@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		D8A1890C2179D3BE00FACE10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A1890B2179D3BE00FACE10 /* AppDelegate.swift */; };
-		D8A1890E2179D3BE00FACE10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A1890D2179D3BE00FACE10 /* ViewController.swift */; };
-		D8A189112179D3BE00FACE10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A1890F2179D3BE00FACE10 /* Main.storyboard */; };
+		D8A1890E2179D3BE00FACE10 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A1890D2179D3BE00FACE10 /* TableViewController.swift */; };
 		D8A189132179D3C000FACE10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8A189122179D3C000FACE10 /* Assets.xcassets */; };
 		D8A189162179D3C000FACE10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A189142179D3C000FACE10 /* LaunchScreen.storyboard */; };
 		D8A189212179D3C000FACE10 /* musicAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A189202179D3C000FACE10 /* musicAppTests.swift */; };
 		D8A1892C2179D3C000FACE10 /* musicAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A1892B2179D3C000FACE10 /* musicAppUITests.swift */; };
+		D8A1893A2179D3F200FACE10 /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A189392179D3F200FACE10 /* MusicTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +36,7 @@
 /* Begin PBXFileReference section */
 		D8A189082179D3BE00FACE10 /* musicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = musicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A1890B2179D3BE00FACE10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D8A1890D2179D3BE00FACE10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D8A189102179D3BE00FACE10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8A1890D2179D3BE00FACE10 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		D8A189122179D3C000FACE10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8A189152179D3C000FACE10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8A189172179D3C000FACE10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		D8A189272179D3C000FACE10 /* musicAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = musicAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A1892B2179D3C000FACE10 /* musicAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicAppUITests.swift; sourceTree = "<group>"; };
 		D8A1892D2179D3C000FACE10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8A189392179D3F200FACE10 /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				D8A1890B2179D3BE00FACE10 /* AppDelegate.swift */,
-				D8A1890D2179D3BE00FACE10 /* ViewController.swift */,
-				D8A1890F2179D3BE00FACE10 /* Main.storyboard */,
+				D8A1890D2179D3BE00FACE10 /* TableViewController.swift */,
 				D8A189122179D3C000FACE10 /* Assets.xcassets */,
 				D8A189142179D3C000FACE10 /* LaunchScreen.storyboard */,
 				D8A189172179D3C000FACE10 /* Info.plist */,
+				D8A189392179D3F200FACE10 /* MusicTableViewCell.swift */,
 			);
 			path = musicApp;
 			sourceTree = "<group>";
@@ -231,7 +231,6 @@
 			files = (
 				D8A189162179D3C000FACE10 /* LaunchScreen.storyboard in Resources */,
 				D8A189132179D3C000FACE10 /* Assets.xcassets in Resources */,
-				D8A189112179D3BE00FACE10 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +255,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8A1890E2179D3BE00FACE10 /* ViewController.swift in Sources */,
+				D8A1890E2179D3BE00FACE10 /* TableViewController.swift in Sources */,
 				D8A1890C2179D3BE00FACE10 /* AppDelegate.swift in Sources */,
+				D8A1893A2179D3F200FACE10 /* MusicTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +293,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D8A1890F2179D3BE00FACE10 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D8A189102179D3BE00FACE10 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D8A189142179D3C000FACE10 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
